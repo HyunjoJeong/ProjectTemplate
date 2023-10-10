@@ -1,8 +1,8 @@
 ## Project Introduction
 
-WhaToDo is an EXTREMELY user-friendly ToDo App.
-WhaToDo supports a VERY variety of features
--> Group ToDo, Schedule Automation (w D-day!), Easy Customizing and etc.
+- WhaToDo is an EXTREMELY user-friendly ToDo App.
+- WhaToDo supports a VERY variety of features
+- -> Group ToDo, Schedule Automation (w D-day!), Easy Customizing and etc.
 
 ## Conventions
 
