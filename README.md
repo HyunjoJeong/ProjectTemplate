@@ -22,6 +22,7 @@
 - `pkg`: package.json 변경
 - `refactor`: 코드 리팩터링
 - `hotfix`: hotfix
+- `etc`: 이외 기타 사항 (상세히 기술)
 
 ## Tech Spec
 
