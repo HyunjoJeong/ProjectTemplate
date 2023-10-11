@@ -9,7 +9,7 @@ then
   echo "======================   🚨 WRONG COMMIT MESSAGE!   ======================"
   echo "=========================================================================="
   echo "== Format should be => [header]: [What was done for Why]                =="
-  echo "== Allowed Headers: feat, fix, doc, css, pkg, refactor, ci, etc        =="
+  echo "== Allowed Headers: feat, fix, doc, css, pkg, refactor, ci, etc         =="
   echo "== EXAMPLE => feat: Google login                                        =="
   echo "=========================================================================="
   echo "== Your commit message was =>" $message 
