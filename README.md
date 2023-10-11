@@ -15,7 +15,7 @@
 
 - `feat`: 새로운 기능 추가 및 변화된 요구사항에 따른 기존 기능 수정
 - `fix`: 버그로 인한 코드 수정
-- `docs`: 문서 및 주석 수정 (eg. README)
+- `doc`: 문서 및 주석 수정 (eg. README)
 - `css`: css 작업
 - `pkg`: package.json 변경
 - `refactor`: 코드 리팩터링 (eg. 네이밍 변경 및 줄바꿈 등 기능과 상관없는 코드 수정)
