@@ -6,7 +6,8 @@
     "dev": "next dev -p 1004",
     "build": "next build",
     "start": "next start -p 1004",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "13.5.4",
