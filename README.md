@@ -13,15 +13,13 @@
 
 #### Commit Message Convention
 
-- `feat`: 새로운 기능 추가
-- `fix`: 코드 수정, 변경 및 삭제
-- `doc`: 문서 수정 (eg. README)
-- `annot`: 주석 추가, 수정, 제거
-- `code`: 줄 바꿈, 여백 수정 등의 단순한 코드 변경
+- `feat`: 새로운 기능 추가 및 변화된 요구사항에 따른 기존 기능 수정
+- `fix`: 버그로 인한 코드 수정
+- `docs`: 문서 및 주석 수정 (eg. README)
 - `css`: css 작업
 - `pkg`: package.json 변경
-- `refactor`: 코드 리팩터링
-- `hotfix`: hotfix
+- `refactor`: 코드 리팩터링 (eg. 네이밍 변경 및 줄바꿈 등 기능과 상관없는 코드 수정)
+- `ci`: CI 관련 설정 수정
 - `etc`: 이외 기타 사항 (상세히 기술)
 
 ## Tech Spec
