@@ -1,5 +1,0 @@
-{
-  "hooks": {
-    "pre-commit": "echo 'You are Commit Master!'"
-  }
-}
