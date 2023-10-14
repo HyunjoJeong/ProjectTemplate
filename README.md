@@ -29,8 +29,8 @@
 
 ## Tech Spec
 
-- FrontEnd: Next(13), React(18), Html5, Storybook
+- FrontEnd: Next(13), React(18), Html5
 - BackEnd:
 - DB:
 - CI/CD:
-- etc:
+- etc: StoryBook
