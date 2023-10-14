@@ -8,7 +8,7 @@
     "start": "next start -p 1004",
     "lint": "next lint",
     "postinstall": "husky install",
-    "storybook": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 9004",
     "build-storybook": "storybook build"
   },
   "dependencies": {
