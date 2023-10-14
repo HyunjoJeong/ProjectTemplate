@@ -19,12 +19,17 @@
 - `css`: css 작업
 - `pkg`: package.json 변경
 - `refactor`: 코드 리팩터링 (eg. 네이밍 변경 및 줄바꿈 등 기능과 상관없는 코드 수정)
-- `ci`: CI 관련 설정 수정
+- `ci`: CI/CD 관련 설정 수정
 - `etc`: 이외 기타 사항 (상세히 기술)
+
+## Tips
+
+- Storybook 실행: 'yarn storybook'
+- commit message 변경: '.husky/commit-msg'에서,, 'README' 파일도 업데이트 할 것.
 
 ## Tech Spec
 
-- FrontEnd: Next(13), React(18), Html5
+- FrontEnd: Next(13), React(18), Html5, Storybook
 - BackEnd:
 - DB:
 - CI/CD:
