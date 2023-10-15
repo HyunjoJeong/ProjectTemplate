@@ -26,6 +26,7 @@
 
 - Storybook 실행: 'yarn storybook'
 - commit message 변경: '.husky/commit-msg'에서,, 'README' 파일도 업데이트 할 것.
+- tsconfig.json 에서 path를 추가한다면, .storybook/main.ts 에도 추가해야 storybook에서 정상적으로 import 할 수 있음.
 
 ## Tech Spec
 
