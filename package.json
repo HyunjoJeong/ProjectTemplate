@@ -12,7 +12,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@emotion/css": "^11.11.2",
+    "@emotion/babel-preset-css-prop": "^11.11.0",
     "@emotion/react": "^11.11.1",
     "next": "13.5.4",
     "react": "^18",
@@ -36,5 +36,8 @@
     "husky": "^8.0.3",
     "storybook": "^7.4.6",
     "typescript": "^5"
+  },
+  "resolutions": {
+    "cli-truncate": "2.1.0"
   }
 }

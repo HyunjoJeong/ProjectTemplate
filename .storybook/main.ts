@@ -24,6 +24,10 @@ const config: StorybookConfig = {
       };
     }
     return config;
+  },
+  babel: async (options) => {
+    options.presets?.push('@emotion/babel-preset-css-prop');
+    return options;
   }
 };
 export default config;
