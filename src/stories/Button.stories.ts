@@ -1,11 +1,20 @@
 import type { Meta, StoryObj } from '@storybook/react';
+import { colors } from '@/styles/colors';
 
-// import { Button } from './Button';
-import Button from '@/components/Button';
+import Button, {
+  BluePrimaryButton,
+  BlueSecondaryButton,
+  RedPrimaryButton,
+  RedSecondaryButton,
+  YellowPrimaryButton,
+  YellowSecondaryButton,
+  GreenPrimaryButton,
+  GreenSecondaryButton
+} from '@/components/atoms/buttons/BaseButtons';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  title: 'Example/Button',
+  title: 'Atom/Button',
   component: Button,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
@@ -15,7 +24,8 @@ const meta = {
   tags: ['autodocs'],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    backgroundColor: { control: 'color' }
+    backgroundColor: { control: 'color' },
+    color: { control: 'color' }
   }
 } satisfies Meta<typeof Button>;
 
@@ -23,37 +33,72 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
-export const Primary: Story = {
+export const Base: Story = {
   args: {
-    primary: true,
-    label: 'Button'
+    text: 'Button'
   }
 };
 
-export const Secondary: Story = {
+export const BluePrimary: Story = {
   args: {
-    label: 'Button'
+    text: 'Button',
+    backgroundColor: colors.blue.primary,
+    color: '#FFF'
   }
 };
 
-export const Large: Story = {
+export const BlueSecondary: Story = {
   args: {
-    size: 'large',
-    label: 'Button'
+    text: 'Button',
+    backgroundColor: colors.blue.secondary,
+    color: colors.blue.dark
   }
 };
 
-export const Small: Story = {
+export const GreenPrimary: Story = {
   args: {
-    size: 'small',
-    label: 'Button'
+    text: 'Button',
+    backgroundColor: colors.green.primary,
+    color: '#FFF'
   }
 };
 
-export const Warning: Story = {
+export const GreenSecondary: Story = {
   args: {
-    primary: true,
-    label: 'Delete now',
-    backgroundColor: 'red'
+    text: 'Button',
+    backgroundColor: colors.green.secondary,
+    color: colors.green.dark
+  }
+};
+
+export const YellowPrimary: Story = {
+  args: {
+    text: 'Button',
+    backgroundColor: colors.yellow.primary,
+    color: '#FFF'
+  }
+};
+
+export const YellowSecondary: Story = {
+  args: {
+    text: 'Button',
+    backgroundColor: colors.yellow.secondary,
+    color: colors.yellow.dark
+  }
+};
+
+export const RedPrimary: Story = {
+  args: {
+    text: 'Button',
+    backgroundColor: colors.red.primary,
+    color: '#FFF'
+  }
+};
+
+export const RedSecondary: Story = {
+  args: {
+    text: 'Button',
+    backgroundColor: colors.red.secondary,
+    color: colors.red.dark
   }
 };
