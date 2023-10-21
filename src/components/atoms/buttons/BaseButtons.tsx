@@ -34,8 +34,6 @@ export const Button = ({
 
 export default Button;
 
-// !
-
 type ButtonProps = {
   text: string;
   padding?: CSSProperties['padding'];

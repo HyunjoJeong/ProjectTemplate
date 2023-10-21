@@ -85,7 +85,7 @@ export const colors: Colors = {
     100: '#EAE6FF'
   },
   neutral: {
-    background: '#F4F5F7',
+    background: '#EBECF0',
     900: '#091E42',
     800: '#172B4D',
     700: '#253858',
