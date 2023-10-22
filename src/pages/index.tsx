@@ -11,7 +11,7 @@ import Button, {
 
 export default function Home() {
   return (
-    <>
+    <main css={{ minHeight: '100vh' }}>
       <div>hello?</div>
       <Button text="Button" />
       <BluePrimaryButton text="Button" />
@@ -22,6 +22,6 @@ export default function Home() {
       <YellowSecondaryButton text="Button" />
       <RedPrimaryButton text="Button" />
       <RedSecondaryButton text="Button" />
-    </>
+    </main>
   );
 }

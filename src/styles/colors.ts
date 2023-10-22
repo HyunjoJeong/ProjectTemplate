@@ -2,12 +2,9 @@
 // * dark is mainly for text color in secondary button
 // ! background is base background color but NOT ESSENTIAL
 // * https://www.figma.com/file/RQBbRqAAlL8e5JrqycKc6V/ADS-Foundations-(Community)?node-id=2%3A23&mode=dev
+// * or run 'yarn storybook' to see colors
 
-type color = 'red' | 'yellow' | 'green' | 'teal' | 'blue' | 'purple' | 'neutral';
-type base = { primary?: string; secondary?: string; dark?: string; background?: string };
-type Colors = Record<color, base & { [key: number]: string }>;
-
-export const colors: Colors = {
+export const colors = {
   red: {
     // * usage: Critical/Error Message.. etc
     primary: '#D21C1C',
@@ -86,6 +83,7 @@ export const colors: Colors = {
   },
   neutral: {
     background: '#EBECF0',
+    dark: '#131E39',
     900: '#091E42',
     800: '#172B4D',
     700: '#253858',
