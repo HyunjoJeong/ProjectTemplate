@@ -10,7 +10,8 @@ export const Button = ({
   margin,
   border,
   borderRadius,
-  onClick
+  onClick,
+  ...props
 }: {
   text: string;
   primary?: boolean;
@@ -33,9 +34,11 @@ export const Button = ({
         borderRadius: borderRadius || '6px',
         cursor: 'pointer',
         ':hover': { boxShadow: `0 0 0 1px ${backgroundColor || colors.neutral.background}` },
-        ':active': { filter: 'brightness(92%)', boxShadow: 'none' }
+        ':active': { filter: 'brightness(92%)', boxShadow: 'none' },
+        ...props
       }}
       onClick={onClick}
+      {...props}
     >
       {text}
     </button>
@@ -59,7 +62,8 @@ export const BluePrimaryButton = ({
   margin,
   border,
   borderRadius,
-  onClick
+  onClick,
+  ...props
 }: ButtonProps) => {
   return (
     <Button
@@ -71,6 +75,7 @@ export const BluePrimaryButton = ({
       onClick={onClick}
       backgroundColor={colors.blue.primary}
       primary
+      {...props}
     />
   );
 };
@@ -81,7 +86,8 @@ export const RedPrimaryButton = ({
   margin,
   border,
   borderRadius,
-  onClick
+  onClick,
+  ...props
 }: ButtonProps) => {
   return (
     <Button
@@ -93,6 +99,7 @@ export const RedPrimaryButton = ({
       onClick={onClick}
       backgroundColor={colors.red.primary}
       primary
+      {...props}
     />
   );
 };
@@ -103,7 +110,8 @@ export const YellowPrimaryButton = ({
   margin,
   border,
   borderRadius,
-  onClick
+  onClick,
+  ...props
 }: ButtonProps) => {
   return (
     <Button
@@ -115,6 +123,7 @@ export const YellowPrimaryButton = ({
       onClick={onClick}
       backgroundColor={colors.yellow.primary}
       primary
+      {...props}
     />
   );
 };
@@ -125,7 +134,8 @@ export const GreenPrimaryButton = ({
   margin,
   border,
   borderRadius,
-  onClick
+  onClick,
+  ...props
 }: ButtonProps) => {
   return (
     <Button
@@ -137,6 +147,7 @@ export const GreenPrimaryButton = ({
       onClick={onClick}
       backgroundColor={colors.green.primary}
       primary
+      {...props}
     />
   );
 };
@@ -147,7 +158,8 @@ export const BlueSecondaryButton = ({
   margin,
   border,
   borderRadius,
-  onClick
+  onClick,
+  ...props
 }: ButtonProps) => {
   return (
     <Button
@@ -159,6 +171,7 @@ export const BlueSecondaryButton = ({
       onClick={onClick}
       backgroundColor={colors.blue.secondary}
       color={colors.blue.dark}
+      {...props}
     />
   );
 };
@@ -169,7 +182,8 @@ export const RedSecondaryButton = ({
   margin,
   border,
   borderRadius,
-  onClick
+  onClick,
+  ...props
 }: ButtonProps) => {
   return (
     <Button
@@ -181,6 +195,7 @@ export const RedSecondaryButton = ({
       onClick={onClick}
       backgroundColor={colors.red.secondary}
       color={colors.red.dark}
+      {...props}
     />
   );
 };
@@ -191,7 +206,8 @@ export const YellowSecondaryButton = ({
   margin,
   border,
   borderRadius,
-  onClick
+  onClick,
+  ...props
 }: ButtonProps) => {
   return (
     <Button
@@ -203,6 +219,7 @@ export const YellowSecondaryButton = ({
       onClick={onClick}
       backgroundColor={colors.yellow.secondary}
       color={colors.yellow.dark}
+      {...props}
     />
   );
 };
@@ -213,7 +230,8 @@ export const GreenSecondaryButton = ({
   margin,
   border,
   borderRadius,
-  onClick
+  onClick,
+  ...props
 }: ButtonProps) => {
   return (
     <Button
@@ -225,6 +243,7 @@ export const GreenSecondaryButton = ({
       onClick={onClick}
       backgroundColor={colors.green.secondary}
       color={colors.green.dark}
+      {...props}
     />
   );
 };
