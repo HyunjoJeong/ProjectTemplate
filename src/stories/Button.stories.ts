@@ -14,7 +14,11 @@ const meta = {
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     backgroundColor: { control: 'color' },
-    color: { control: 'color' }
+    color: { control: 'color' },
+    padding: { control: 'text' },
+    margin: { control: 'text' },
+    border: { control: 'text' },
+    borderRadius: { control: 'text' }
   }
 } satisfies Meta<typeof Button>;
 
@@ -30,7 +34,7 @@ export const BluePrimary: Story = {
   args: {
     text: 'Button',
     backgroundColor: colors.blue.primary,
-    color: '#FFF'
+    primary: true
   }
 };
 
@@ -46,7 +50,7 @@ export const GreenPrimary: Story = {
   args: {
     text: 'Button',
     backgroundColor: colors.green.primary,
-    color: '#FFF'
+    primary: true
   }
 };
 
@@ -62,7 +66,7 @@ export const YellowPrimary: Story = {
   args: {
     text: 'Button',
     backgroundColor: colors.yellow.primary,
-    color: '#FFF'
+    primary: true
   }
 };
 
@@ -78,7 +82,7 @@ export const RedPrimary: Story = {
   args: {
     text: 'Button',
     backgroundColor: colors.red.primary,
-    color: '#FFF'
+    primary: true
   }
 };
 
