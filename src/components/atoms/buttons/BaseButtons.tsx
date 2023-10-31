@@ -1,5 +1,5 @@
-import { CSSProperties } from 'react';
 import { colors } from '@/styles/colors';
+import { CSSProperties } from 'react';
 
 export const Button = ({
   text,

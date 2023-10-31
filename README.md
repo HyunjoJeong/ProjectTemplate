@@ -2,7 +2,7 @@
 
 - WhaToDo is an EXTREMELY user-friendly ToDo App.
 - WhaToDo supports a VERY variety of features
-- -> Group ToDo, Schedule Automation (w D-day!), Easy Customizing and etc.
+- -> Group Todo, Schedule Automation (w D-day!), Easy Customizing and etc.
 
 ## Conventions
 
@@ -31,7 +31,7 @@
 
 ## Tech Spec
 
-- FrontEnd: Next(v.13), React(v.18), Emotion, StoryBook
+- FrontEnd: Next(v13), React(v18), Emotion, StoryBook
 - BackEnd:
 - DB:
 - CI/CD:
