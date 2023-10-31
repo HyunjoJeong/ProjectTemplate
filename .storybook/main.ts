@@ -21,10 +21,10 @@ const config: StorybookConfig = {
       config.resolve.alias = {
         ...config.resolve.alias,
         '@': path.resolve(__dirname, '../src'),
-        '@atoms': path.resolve(__dirname, '../src/components/atoms'),
-        '@molecules': path.resolve(__dirname, '../src/components/molecules'),
-        '@organisms': path.resolve(__dirname, '../src/components/organisms'),
-        '@templates': path.resolve(__dirname, '../src/components/templates')
+        atoms: path.resolve(__dirname, '../src/components/atoms'),
+        molecules: path.resolve(__dirname, '../src/components/molecules'),
+        organisms: path.resolve(__dirname, '../src/components/organisms'),
+        templates: path.resolve(__dirname, '../src/components/templates')
       };
     }
     return config;

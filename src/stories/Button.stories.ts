@@ -1,7 +1,7 @@
 import { colors } from '@/styles/colors';
 import type { Meta, StoryObj } from '@storybook/react';
 
-import Button from '@atoms/buttons/BaseButtons';
+import Button from 'atoms/buttons/BaseButtons';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
