@@ -2,7 +2,6 @@ import { colors } from '@/styles/colors';
 import { ButtonHTMLAttributes, CSSProperties, DetailedHTMLProps } from 'react';
 
 type OwnProps = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> & {
-  text: string;
   primary?: boolean;
   color?: CSSProperties['color'];
   backgroundColor?: CSSProperties['backgroundColor'];
@@ -10,11 +9,10 @@ type OwnProps = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLB
   margin?: CSSProperties['margin'];
   border?: CSSProperties['border'];
   borderRadius?: CSSProperties['borderRadius'];
-  onClick?: () => void;
 };
 
 export const Button = ({
-  text,
+  children,
   primary,
   color,
   backgroundColor,
@@ -34,14 +32,13 @@ export const Button = ({
         margin: margin || '0px 2px',
         border: border || 'none',
         borderRadius: borderRadius || '6px',
-        cursor: 'pointer',
-        ':hover': { boxShadow: `0 0 0 1px ${backgroundColor || colors.neutral.background}` },
+        ':hover': { scale: '1.03' },
         ':active': { filter: 'brightness(92%)', boxShadow: 'none' }
       }}
       onClick={onClick}
       {...props}
     >
-      {text}
+      {children}
     </button>
   );
 };
@@ -68,7 +65,7 @@ export const BluePrimaryButton = ({
 }: ButtonProps) => {
   return (
     <Button
-      text={text}
+      children={text}
       padding={padding}
       margin={margin}
       border={border}
@@ -92,7 +89,7 @@ export const RedPrimaryButton = ({
 }: ButtonProps) => {
   return (
     <Button
-      text={text}
+      children={text}
       padding={padding}
       margin={margin}
       border={border}
@@ -116,7 +113,7 @@ export const YellowPrimaryButton = ({
 }: ButtonProps) => {
   return (
     <Button
-      text={text}
+      children={text}
       padding={padding}
       margin={margin}
       border={border}
@@ -140,7 +137,7 @@ export const GreenPrimaryButton = ({
 }: ButtonProps) => {
   return (
     <Button
-      text={text}
+      children={text}
       padding={padding}
       margin={margin}
       border={border}
@@ -164,7 +161,7 @@ export const BlueSecondaryButton = ({
 }: ButtonProps) => {
   return (
     <Button
-      text={text}
+      children={text}
       padding={padding}
       margin={margin}
       border={border}
@@ -188,7 +185,7 @@ export const RedSecondaryButton = ({
 }: ButtonProps) => {
   return (
     <Button
-      text={text}
+      children={text}
       padding={padding}
       margin={margin}
       border={border}
@@ -212,7 +209,7 @@ export const YellowSecondaryButton = ({
 }: ButtonProps) => {
   return (
     <Button
-      text={text}
+      children={text}
       padding={padding}
       margin={margin}
       border={border}
@@ -236,7 +233,7 @@ export const GreenSecondaryButton = ({
 }: ButtonProps) => {
   return (
     <Button
-      text={text}
+      children={text}
       padding={padding}
       margin={margin}
       border={border}

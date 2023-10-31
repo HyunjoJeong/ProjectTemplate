@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main css={{ minHeight: '100vh' }}>
       <div>hello?</div>
-      <Button text="Button" />
+      <Button>Button</Button>
       <BluePrimaryButton text="Button" />
       <BlueSecondaryButton text="Button" />
       <GreenPrimaryButton text="Button" />

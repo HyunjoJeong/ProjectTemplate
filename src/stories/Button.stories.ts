@@ -27,12 +27,12 @@ type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Base: Story = {
-  args: { text: 'Button' }
+  args: { children: 'Button' }
 };
 
 export const BluePrimary: Story = {
   args: {
-    text: 'Button',
+    children: 'Button',
     backgroundColor: colors.blue.primary,
     primary: true
   }
@@ -40,7 +40,7 @@ export const BluePrimary: Story = {
 
 export const BlueSecondary: Story = {
   args: {
-    text: 'Button',
+    children: 'Button',
     backgroundColor: colors.blue.secondary,
     color: colors.blue.dark
   }
@@ -48,7 +48,7 @@ export const BlueSecondary: Story = {
 
 export const GreenPrimary: Story = {
   args: {
-    text: 'Button',
+    children: 'Button',
     backgroundColor: colors.green.primary,
     primary: true
   }
@@ -56,7 +56,7 @@ export const GreenPrimary: Story = {
 
 export const GreenSecondary: Story = {
   args: {
-    text: 'Button',
+    children: 'Button',
     backgroundColor: colors.green.secondary,
     color: colors.green.dark
   }
@@ -64,7 +64,7 @@ export const GreenSecondary: Story = {
 
 export const YellowPrimary: Story = {
   args: {
-    text: 'Button',
+    children: 'Button',
     backgroundColor: colors.yellow.primary,
     primary: true
   }
@@ -72,7 +72,7 @@ export const YellowPrimary: Story = {
 
 export const YellowSecondary: Story = {
   args: {
-    text: 'Button',
+    children: 'Button',
     backgroundColor: colors.yellow.secondary,
     color: colors.yellow.dark
   }
@@ -80,7 +80,7 @@ export const YellowSecondary: Story = {
 
 export const RedPrimary: Story = {
   args: {
-    text: 'Button',
+    children: 'Button',
     backgroundColor: colors.red.primary,
     primary: true
   }
@@ -88,7 +88,7 @@ export const RedPrimary: Story = {
 
 export const RedSecondary: Story = {
   args: {
-    text: 'Button',
+    children: 'Button',
     backgroundColor: colors.red.secondary,
     color: colors.red.dark
   }
