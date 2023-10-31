@@ -1,5 +1,17 @@
 import { colors } from '@/styles/colors';
-import { CSSProperties } from 'react';
+import { ButtonHTMLAttributes, CSSProperties, DetailedHTMLProps } from 'react';
+
+type OwnProps = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> & {
+  text: string;
+  primary?: boolean;
+  color?: CSSProperties['color'];
+  backgroundColor?: CSSProperties['backgroundColor'];
+  padding?: CSSProperties['padding'];
+  margin?: CSSProperties['margin'];
+  border?: CSSProperties['border'];
+  borderRadius?: CSSProperties['borderRadius'];
+  onClick?: () => void;
+};
 
 export const Button = ({
   text,
@@ -12,17 +24,7 @@ export const Button = ({
   borderRadius,
   onClick,
   ...props
-}: {
-  text: string;
-  primary?: boolean;
-  color?: CSSProperties['color'];
-  backgroundColor?: CSSProperties['backgroundColor'];
-  padding?: CSSProperties['padding'];
-  margin?: CSSProperties['margin'];
-  border?: CSSProperties['border'];
-  borderRadius?: CSSProperties['borderRadius'];
-  onClick?: () => void;
-}) => {
+}: OwnProps) => {
   return (
     <button
       css={{
@@ -34,8 +36,7 @@ export const Button = ({
         borderRadius: borderRadius || '6px',
         cursor: 'pointer',
         ':hover': { boxShadow: `0 0 0 1px ${backgroundColor || colors.neutral.background}` },
-        ':active': { filter: 'brightness(92%)', boxShadow: 'none' },
-        ...props
+        ':active': { filter: 'brightness(92%)', boxShadow: 'none' }
       }}
       onClick={onClick}
       {...props}
@@ -47,7 +48,7 @@ export const Button = ({
 
 export default Button;
 
-type ButtonProps = {
+type ButtonProps = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> & {
   text: string;
   padding?: CSSProperties['padding'];
   margin?: CSSProperties['margin'];
