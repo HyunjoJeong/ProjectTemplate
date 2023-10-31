@@ -7,7 +7,7 @@ import Button, {
   RedSecondaryButton,
   YellowPrimaryButton,
   YellowSecondaryButton
-} from '@/components/atoms/buttons/BaseButtons';
+} from '@atoms/buttons/BaseButtons';
 
 export default function Home() {
   return (
