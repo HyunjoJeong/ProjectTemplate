@@ -1,8 +1,6 @@
 ## Project Introduction
 
-- WhaToDo is an EXTREMELY user-friendly ToDo App.
-- WhaToDo supports a VERY variety of features
-- -> Group Todo, Schedule Automation (w D-day!), Easy Customizing and etc.
+- This is Template for Front-End Developers who want to side project based on NextJs with StoryBook, Emotion, Husky
 
 ## Conventions
 
